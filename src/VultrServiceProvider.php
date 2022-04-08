@@ -7,6 +7,7 @@ use Vultr\Client;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
+use Vultr\Adapter\CurlAdapter;
 
 class VultrServiceProvider extends ServiceProvider
 {
@@ -25,7 +26,9 @@ class VultrServiceProvider extends ServiceProvider
     {
         $this->app->singleton(Client::class, function (Container $app) {
             return new Client(
-                $app->make('config')->get('vultr.api_token')
+                new CurlAdapter(
+                    $app->make('config')->get('vultr.api_token')
+                )
             );
         });
 

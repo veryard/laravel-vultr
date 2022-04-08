@@ -34,7 +34,10 @@
         "laravel": {
             "providers": [
                 "Vultr\\Laravel\\VultrServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Vultr": "Vultr\\Laravel\\Facades\\Vultr"
+            }
         }
     },
     "minimum-stability": "dev",

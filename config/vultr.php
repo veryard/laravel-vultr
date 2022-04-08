@@ -1,7 +1,5 @@
 <?php
 
 return [
-    'connections' => [
-        'token' => '<YOUR_API_TOKEN>',
-    ],
+    'api_token' => env('VULTR_API_TOKEN'),
 ];
