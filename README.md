@@ -1,8 +1,3 @@
-php artisan vendor:publish --provider="Vultr\Laravel\VultrServiceProvider"
-
-
-VULTR_API_TOKEN env
-
 ## Installation
 
 Laravel DigitalOcean requires [PHP](https://php.net) 7.2-8.1. This particular version supports Laravel 8-9.
