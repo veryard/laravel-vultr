@@ -1,6 +1,6 @@
 ## Installation
 
-Laravel DigitalOcean requires [PHP](https://php.net) 7.2-8.1. This particular version supports Laravel 8-9.
+Laravel Vultr requires [PHP](https://php.net) 7.2-8.1. This particular version supports Laravel 8-9.
 
 To install the latest version, simple require this package using [Composer](https://getcomposer.org). Currently the only working adapter is CURL.
 
